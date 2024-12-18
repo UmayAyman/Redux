@@ -30,3 +30,6 @@ export const counterSlice = createSlice({
 export const { increment, decrement, multiply, incrementByAmount } = counterSlice.actions;
 
 export default counterSlice.reducer;
+
+
+//slice means you want to store particular thing and want to write functions related to that

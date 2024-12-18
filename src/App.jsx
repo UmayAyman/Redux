@@ -1,11 +1,11 @@
-import { useDispatch, useSelector } from 'react-redux'
-import './App.css'
-import Navbar from './components/Navbar'
-import { decrement, increment, multiply } from './redux/counter/countersSlice'
+import { useDispatch, useSelector } from 'react-redux'; //useSelector is used to read some value & whenever you want you count value in your app you'll have to import these hooks and fun(increment, decrement, etc)
+import './App.css';
+import Navbar from './components/Navbar';
+import { decrement, increment, multiply } from './redux/counter/countersSlice';
 
 
 function App() {
-  const count = useSelector((state) => state.counter.value)
+  const count = useSelector((state) => state.counter.value)   //Read count value (bring count from redux store)
   const dispatch = useDispatch()
 
   return (
